@@ -29,7 +29,7 @@ export default function ScreenB1() {
       <Text style={styles.text}>Teléfono</Text>
       <TextInput style={styles.input} value={phone} onChangeText={setPhone} keyboardType="phone-pad" />
 
-      <TouchableOpacity style={styles.button} onPress={handleConfirm}>
+      <TouchableOpacity style={styles.pressable} onPress={handleConfirm}>
         <Text style={styles.buttonText}>CONFIRMAR</Text>
       </TouchableOpacity>
     </View>

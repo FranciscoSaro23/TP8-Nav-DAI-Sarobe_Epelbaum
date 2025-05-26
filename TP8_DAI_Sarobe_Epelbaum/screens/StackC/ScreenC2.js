@@ -1,6 +1,6 @@
 // screens/StackC/ScreenC2.js
 import React, { useState } from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button, Pressable } from 'react-native';
 import { styles } from '../../components/SharedStyles';
 
 export default function ScreenC2() {
@@ -9,7 +9,9 @@ export default function ScreenC2() {
   return (
     <View style={[styles.container, { backgroundColor: 'gold' }]}> 
       <Text style={styles.text}>Contador: {count}</Text>
-      <Button title="Sumar 1" onPress={() => setCount(count + 1)} />
+      <Pressable style={styles.pressable} onPress={() => setCount(count + 1)}>
+      <Text>PRESS ME</Text>
+      </Pressable>
     </View>
   );
 }

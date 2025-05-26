@@ -59,17 +59,17 @@ export default function App() {
       <Tab.Navigator screenOptions={({ route }) => ({
         tabBarIcon: ({ color, size }) => {
           let iconName;
-          if (route.name === 'StackA') iconName = 'home';
-          else if (route.name === 'StackB') iconName = 'search';
-          else if (route.name === 'StackC') iconName = 'person';
-          else if (route.name === 'StackD') iconName = 'settings';
+          if (route.name === 'Home') iconName = 'home';
+          else if (route.name === 'Search') iconName = 'search';
+          else if (route.name === 'Profile') iconName = 'person';
+          else if (route.name === 'Settings') iconName = 'settings';
           return <Ionicons name={iconName} size={size} color={color} />;
         },
       })}>
-        <Tab.Screen name="StackA" component={StackANavigator} />
-        <Tab.Screen name="StackB" component={StackBNavigator} />
-        <Tab.Screen name="StackC" component={StackCNavigator} />
-        <Tab.Screen name="StackD" component={StackDNavigator} />
+        <Tab.Screen name="Home" component={StackANavigator} />
+        <Tab.Screen name="Search" component={StackBNavigator} />
+        <Tab.Screen name="Profile" component={StackCNavigator} />
+        <Tab.Screen name="Settings" component={StackDNavigator} />
       </Tab.Navigator>
     </NavigationContainer>
   );

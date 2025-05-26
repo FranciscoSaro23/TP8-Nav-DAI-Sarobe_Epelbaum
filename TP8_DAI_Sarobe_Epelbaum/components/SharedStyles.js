@@ -21,15 +21,17 @@ export const styles = StyleSheet.create({
     marginBottom: 10,
     borderRadius: 5,
   },
-  button: {
-    backgroundColor: '#007bff',
+  pressable: {
+    backgroundColor: '#FFFFFF',
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 5,
+    borderColor: 'black',
+    borderWidth: 2, 
     marginTop: 10,
   },
   buttonText: {
-    color: 'white',
+    color: 'black',
     fontSize: 16,
     textAlign: 'center',
   }
