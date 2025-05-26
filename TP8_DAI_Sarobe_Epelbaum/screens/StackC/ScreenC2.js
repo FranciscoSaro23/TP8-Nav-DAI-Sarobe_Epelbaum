@@ -8,7 +8,7 @@ export default function ScreenC2() {
 
   return (
     <View style={[styles.container, { backgroundColor: 'gold' }]}> 
-      <Text style={styles.text}>Contador: {count}</Text>
+      <Text style={styles.text}>{count}</Text>
       <Pressable style={styles.pressable} onPress={() => setCount(count + 1)}>
       <Text>PRESS ME</Text>
       </Pressable>

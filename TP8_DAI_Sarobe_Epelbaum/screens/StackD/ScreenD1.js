@@ -1,6 +1,6 @@
 // screens/StackD/ScreenD1.js
 import React from 'react';
-import { View, Text, Button, Image } from 'react-native';
+import { View, Text, Button, Image, Pressable } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { styles } from '../../components/SharedStyles';
 
@@ -10,11 +10,11 @@ export default function ScreenD1() {
   return (
     <View style={[styles.container, { backgroundColor: 'lightgreen' }]}> 
       <Text style={styles.text}>Pantalla D1</Text>
+      <Pressable onPress={() => navigation.navigate('ScreenD2')}>
       <Image
-        source={{ uri: 'https://placekitten.com/200/200' }}
-        style={{ width: 200, height: 200, marginBottom: 20 }}
+        source={require('../../assets/settings.jpg')}
       />
-      <Button title="Ir a D2" onPress={() => navigation.navigate('ScreenD2')} />
+      </Pressable>
     </View>
   );
 }

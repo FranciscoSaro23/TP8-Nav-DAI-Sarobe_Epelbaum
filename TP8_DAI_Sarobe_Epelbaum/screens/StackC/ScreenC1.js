@@ -8,10 +8,9 @@ export default function ScreenC1() {
   const navigation = useNavigation();
 
   return (
-    <View style={[styles.container, { backgroundColor: 'gold' }]}> 
-      <Text style={styles.text}>Pantalla C1</Text>
+    <View style={[styles.container, { backgroundColor: 'gold' }]}>
       <Button
-        title="Ir a C2"
+        title="Boton Contador"
         onPress={() => navigation.navigate('ScreenC2')}
       />
     </View>

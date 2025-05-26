@@ -61,14 +61,14 @@ export default function App() {
           let iconName;
           if (route.name === 'Home') iconName = 'home';
           else if (route.name === 'Search') iconName = 'search';
-          else if (route.name === 'Profile') iconName = 'person';
+          else if (route.name === 'Button') iconName = 'button';
           else if (route.name === 'Settings') iconName = 'settings';
           return <Ionicons name={iconName} size={size} color={color} />;
         },
       })}>
         <Tab.Screen name="Home" component={StackANavigator} />
         <Tab.Screen name="Search" component={StackBNavigator} />
-        <Tab.Screen name="Profile" component={StackCNavigator} />
+        <Tab.Screen name="Button" component={StackCNavigator} />
         <Tab.Screen name="Settings" component={StackDNavigator} />
       </Tab.Navigator>
     </NavigationContainer>

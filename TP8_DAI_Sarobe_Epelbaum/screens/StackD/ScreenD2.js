@@ -6,11 +6,8 @@ import { styles } from '../../components/SharedStyles';
 export default function ScreenD2() {
   return (
     <View style={[styles.container, { backgroundColor: 'lightgreen' }]}> 
-      <Text style={styles.text}>Pantalla D2</Text>
-      <Image
-        source={{ uri: 'https://placebear.com/200/200' }}
-        style={{ width: 200, height: 200 }}
-      />
+      <Text>Tocaste las Fake Settings, has decifrado el boton secreto!</Text>
+      <Text style={styles.text}>Felicidades!</Text>
     </View>
   );
 }

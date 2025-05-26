@@ -9,9 +9,8 @@ export default function ScreenA1() {
 
   return (
     <View style={[styles.container, { backgroundColor: 'pink' }]}> 
-      <Text style={styles.text}>Pantalla A1</Text>
       <Button
-        title="Ir a A2"
+        title="No Tocar"
         onPress={() => navigation.navigate('ScreenA2')}
       />
     </View>
